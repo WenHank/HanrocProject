@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:300&display=swap');
+
+html {
+    font-size: 14px;
+}
+body{
+    margin: 0;
+}
+h2, h3, p { 
+    font-family: futura pt light,'Noto Sans TC', sans-serif;
+}
+/*Public*/
+.block{
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Footercontainer {
+    color: #fff;
+    border-top: 1px solid #e5e5e5;
+    position: absolute;
+    justify-content: center;
+    width: 100%;
+    white-space: nowrap;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50px;
+}
+
+.buttonCss {
+    background-color: #ffa500;
+    color: aliceblue;
+    border-radius: 10px;
+    border: #ffa500;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blockFont{
+    width: 70%;
+}
+
+.Fonth1 {
+    font-size: 34px;
+}
+
+.cato{
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    font-size: 60px;
+}
+
+.FontP {
+    font-size: 19px;
+    color: #747474;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Fonttitle{
+    font-size: 20px;
+    margin-bottom: 2px;
+}
+
+.slide{
+    top: 0;
+    height: 100%;
+    width: 192px;
+    position: absolute;
+    background-color: #fff;
+    transition: 0.5s ease ;
+    display: flex;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-150%);
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebarinput{
+    top: 20px;
+    left: 20px;
+    position: absolute;
+    -webkit-appearance: none;
+}
+
+.triangle{
+    width: 300px;
+    height: 300px;
+    background-color: orange;
+    transform: rotate(45deg);
+    position: absolute;
+    left: -150px;
+    top: -150px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.setting{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    z-index: 1;
+}
+
+.settingIcon{
+    cursor: pointer;
+    animation: cycleing 3s infinite linear;
+    z-index: 2;
+}
+
+@keyframes cycleing {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+ .toggle{
+    z-index: 1;
+}
+
+.sidebarinput:checked ~ .slide {
+    transform: translateY(0px);
+}
+
+.rowCss{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.columnCss{
+    display: flex;
+    flex-direction: column;
+}
+.theContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/*Index*/
+.indexCardImg{
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: -5px -5px 20px #babecc, 5px 5px 20px #39BAE8;
+    margin-bottom: 20px;
+}
+
+.indexCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.midindexCard{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.Background {
+	background: linear-gradient(#39BAE8,#caeefa);
+	color: #333;
+	font: 100% Arial, Sans Serif;
+    width: 100%;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+    z-index: -2;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#background-wrap {
+    left: 50;
+    padding-top: 50px;
+    position: fixed;
+    right: 0;
+    bottom: 150px;
+    top: 100;
+    z-index: -1;
+    animation: cloudmove  3s linear infinite;
+}
+
+@keyframes cloudmove{
+    25%{
+        transform: translate(4px,-4px);
+    }
+    50%, 100%{
+        transform: translateX(0px,0px);
+    }
+    75%{
+        transform: translateX(-4px,4px);
+    }
+}
+
+.x1 {
+	transform: scale(2);
+}
+
+/* OBJECTS */
+
+.cloud {
+	background: #fff;
+	background: -moz-linear-gradient(top,  #fff 5%, #f1f1f1 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(5%,#fff), color-stop(100%,#f1f1f1));
+	background: -webkit-linear-gradient(top,  #fff 5%,#f1f1f1 100%);
+	background: -o-linear-gradient(top,  #fff 5%,#f1f1f1 100%);
+	background: -ms-linear-gradient(top,  #fff 5%,#f1f1f1 100%);
+	background: linear-gradient(top,  #fff 5%,#f1f1f1 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#f1f1f1',GradientType=0 );
+	
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+	
+	-webkit-box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+
+	height: 120px;
+	position: relative;
+	width: 350px;
+}
+
+.cloud:after, .cloud:before {
+    background: #fff;
+	content: '';
+	position: absolute;
+	z-indeX: -1;
+}
+
+
+.cloud:after {
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+
+	height: 100px;
+	left: 50px;
+	top: -50px;
+	width: 100px;
+}
+
+.cloud:before {
+	-webkit-border-radius: 200px;
+	-moz-border-radius: 200px;
+	border-radius: 200px;
+
+	width: 180px;
+	height: 180px;
+	right: 50px;
+	top: -90px;
+}
+
+.indexBigImg{
+    width: 600px;
+    border-radius: 10px;
+}
+
+.Contactinput {
+    width: 250px;
+    display: block;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.Contactselect {
+    display: block;
+    width: 250px;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.ContactContainer{
+    width: 400px;
+    margin-right: 30px;
+}
+
+@media (max-width: 768px){
+    .rowCss{
+        flex-direction: column;
+    }
+    .ContactContainer{
+        align-items: center;
+    }
+}

@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="../index.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <script src="../index.js" asp-append-version="true"></script>
     <title>Document</title>
   </head>
   <body>
@@ -12,9 +14,6 @@
       <input type="checkbox" class="sidebarinput" />
       <div class="toggle">
         <div class="triangle"></div>
-        <div class="smalltriangle">
-          <h2 class="smalltriangle-text">index</h2>
-        </div>
         <div class="setting">
           <img
             class="settingIcon"
@@ -55,35 +54,15 @@
     </label>
     <div class="theContainer">
       <div class="Background">
-        <div id="background-wrap">
-          <div class="indexCloud">
+        <div id="productHeaderCloud">
+          <div class="productCloud">
             <div class="cloud"></div>
           </div>
         </div>
         <div class="block">
-          <img
-            src="../Img/Home/home1.jpg"
-            class="indexBigImg"
-            style="width: 100%"
-          />
-          <h2 class="Fonth1">關於漢鼎</h2>
-          <div class="blockFont">
-            <p class="FontP">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
-              ex optio commodi quod nihil corporis nostrum ea quidem vel
-              voluptates? Culpa quibusdam quasi sequi dolore a omnis delectus
-              laborum veritatis. Lorem ipsum dolor sit amet consectetur,
-              adipisicing elit. Debitis ex optio commodi quod nihil corporis
-              nostrum ea quidem vel voluptates? Culpa quibusdam quasi sequi
-              dolore a omnis delectus laborum veritatis.
-            </p>
-          </div>
-        </div>
-        <div class="block">
-          <h2 class="Fonth1">產品介紹</h2>
           <div class="rowCss">
-            <div class="columnCss indexCard">
-              <div class="indexCardImg">MES</div>
+            <div class="columnCss">
+              <h1 class="Fonth1">RFID</h1>
               <p class="FontP">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Debitis ex optio commodi quod nihil corporis nostrum ea quidem
@@ -92,65 +71,112 @@
                 consectetur,
               </p>
             </div>
-            <div class="columnCss indexCard midindexCard">
-              <div class="indexCardImg">RFID</div>
-              <p class="FontP">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Debitis ex optio commodi quod nihil corporis nostrum ea quidem
-                vel voluptates? Culpa quibusdam quasi sequi dolore a omnis
-                delectus laborum veritatis. Lorem ipsum dolor sit amet
-                consectetur,
-              </p>
-            </div>
-            <div class="columnCss indexCard">
-              <div class="indexCardImg">WMS</div>
-              <p class="FontP">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Debitis ex optio commodi quod nihil corporis nostrum ea quidem
-                vel voluptates? Culpa quibusdam quasi sequi dolore a omnis
-                delectus laborum veritatis. Lorem ipsum dolor sit amet
-                consectetur,
-              </p>
+            <div>
+              <img
+                src="../Img/Product/RFID/rfid-iot.jpeg"
+                style="width: 100%"
+              />
             </div>
           </div>
         </div>
         <div class="block">
+          <div class="Fonth1">系統比較</div>
+          <p class="FontP">
+            RFID是一種識別管理技術,主要由讀 卡機(Reader)和標籤卡片(Tag)所組成，
+            此系統利用射頻(RF)訊號以無線方式傳送及接
+            收數據資料,同時提供Tag端卡片中所有電路運作的電源。
+            因此在理想的使用情況下 識別卡不需與讀卡機接觸即可使讀卡機能
+            讀及寫識別卡中所儲存的數據資料，
+            進行資料的傳輸、識別和交換。目前非接觸式
+            感應的識別卡，在名稱上並沒有統一的名 詞， 如:RFID標籤(RFID Tag)
+            、非接觸ID 標籤
+          </p>
           <div class="rowCss">
-            <div class="columnCss ContactContainer">
-              <h2 class="Fonth1">聯絡我們</h2>
+            <div class="columnCss">
+              <h4 class="Fonth1">RFID的優勢</h4>
               <p class="FontP">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Debitis ex optio commodi quod nihil corporis nostrum ea quidem
-                vel voluptates? Culpa quibusdam quasi sequi dolore a omnis
-                delectus laborum veritatis. Lorem ipsum dolor sit amet
-                consectetur,
+                RFID是一種識別管理技術，主要由讀
+                卡機(Reader)和標籤卡片(Tag)所組成，
+                此系統利用射頻(RF)訊號以無線方式傳送及接 收數據資料，
               </p>
-              <div>姓名</div>
-              <input type="text" class="Contactinput" placeholder="必填" />
-              <div>電話</div>
-              <input type="text" class="Contactinput" placeholder="必填" />
-              <div>信箱</div>
-              <input type="email" class="Contactinput" placeholder="必填" />
-              <div>產品</div>
-              <select class="Contactselect">
-                <option>MES</option>
-                <option>WMS</option>
-                <option>RFID</option>
-              </select>
-              <button type="submit" class="buttonCss" style="margin-top: 50px">
-                Submit
-              </button>
             </div>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.015014264236!2d121.2211144348877!3d24.9656038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346822304d65fd8b%3A0x31c90e9c8479f129!2z5qGD5ZyS5biC5pS_5bqc6Z2S5bm05LqL5YuZ5bGA!5e0!3m2!1szh-TW!2stw!4v1657766449631!5m2!1szh-TW!2stw"
-              width="80%"
-              height="400"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            >
-            </iframe>
+            <div>
+              <img
+                src="../Img/Product/RFID/compare.webp"
+                class="slide-in aligh-right"
+                style="width: 100%"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="block">
+          <div class="Fonth1">標籤分類</div>
+          <p class="ProductRfidP">
+            RFID是一種識別管理技術,主要由讀 卡機(Reader)和標籤卡片(Tag)所組成，
+            此系統利用射頻(RF)訊號以無線方式傳送及接
+            收數據資料,同時提供Tag端卡片中所有電路運作的電源。
+            因此在理想的使用情況下 識別卡不需與讀卡機接觸即可使讀卡機能
+            讀及寫識別卡中所儲存的數據資料，
+            進行資料的傳輸、識別和交換。目前非接觸式
+            感應的識別卡，在名稱上並沒有統一的名 詞， 如:RFID標籤(RFID Tag)
+            、非接觸ID 標籤
+          </p>
+          <div class="rowCss">
+            <div>
+              <img
+                src="../Img/Product/RFID/rfidtype.png"
+                class="slide-in aligh-left"
+                style="width: 100%"
+              />
+            </div>
+            <div class="columnCss">
+              <h4 class="Fonth1">RFID的優勢</h4>
+              <p class="FontP">
+                RFID是一種識別管理技術,主要由讀
+                卡機(Reader)和標籤卡片(Tag)所組成，
+                此系統利用射頻(RF)訊號以無線方式傳送及接 收數據資料，
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="block">
+          <div class="Fonth1">應用範圍</div>
+          <div class="rowCss">
+            <div class="columnCss">
+              <h4 class="Fonth1">RFID的應用</h4>
+              <p class="FontP">
+                1.門禁管制：人員出入門禁監控、管制及上下班人事管理
+                2.回收資產：棧板、貨櫃、台車、籠車等可回收容器管理
+                3.貨物管理：航空運輸的行李識別，存貨、物流運輸管理
+                4.物料處理：工廠的物料清點、物料控制系統
+                5.廢物處理：垃圾回收處理、廢棄物管控系統
+                6.醫療應用：醫院的病歷系統、危險或管制之生化物品管理
+                7.交通運輸：高速公路的收費系統
+                8.防盜應用：超市的防盜、圖書館或書店的防盜管理
+                9.動物監控：畜牧動物管理、寵物識別、野生動物生態的追蹤
+                10.自動控制：汽車、家電、電子業之組裝生產
+                11.聯合票證：聯合多種用途的智能型儲值卡、紅利積點卡
+              </p>
+            </div>
+            <div>
+              <img
+                src="../Img/Product/RFID/rfiduse.jpeg"
+                class="slide-in aligh-right ProductRfidImg"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="block" style="border: none">
+          <div class="Fonttitle">情境模擬</div>
+          <div
+            style="display: flex; justify-content: center; margin-bottom: 20px"
+          >
+            <img src="../Img/Product/RFID/rfiduse.png" style="width: 100%" />
+          </div>
+          <div style="display: flex; justify-content: center">
+            <a asp-area="" asp-controller="Case" asp-action="Rfid">
+              <button type="button" class="buttonCss">RFID 情境模擬</button>
+            </a>
           </div>
         </div>
       </div>

@@ -19,6 +19,11 @@ h2, h3, p {
     flex-direction: column;
 }
 
+.catablock{
+    width: 100%;
+    border-bottom: 0.5px solid #babecc;
+}
+
 .Footercontainer {
     color: #fff;
     border-top: 1px solid #e5e5e5;
@@ -43,6 +48,11 @@ h2, h3, p {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.buttonCss:hover {
+    background-color: #39BAE8;
+    color: black;
 }
 
 .blockFont{
@@ -74,7 +84,7 @@ h2, h3, p {
 .slide{
     top: 0;
     height: 100%;
-    width: 192px;
+    min-width: 220px;
     position: absolute;
     background-color: #fff;
     transition: 0.5s ease ;
@@ -104,6 +114,23 @@ h2, h3, p {
     top: -150px;
     cursor: pointer;
     z-index: 1;
+}
+
+.smalltriangle{
+    width: 80px;
+    height: 80px;
+    background-color: #212529;
+    position: absolute;
+    left: 130px;
+    cursor: pointer;
+    z-index: 0;
+}
+
+.smalltriangle-text{
+    color: #fff;
+    position: absolute;
+    left: 20px;
+    top: 30px;
 }
 
 .setting{
@@ -151,6 +178,106 @@ h2, h3, p {
     align-items: center;
     flex-direction: column;
 }
+/* Product-Mes
+-------------------------------------------------- */
+.mesincrease {
+    width: 500px;
+    background-color: #EAEAEA;
+}
+
+.increase {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    transition: 1s;
+    width: 70px;
+    height: 40px;
+}
+
+.increase:hover {
+    width: 50px;
+}
+
+.efficacy {
+    width: 90%;
+    background-color: #1F6ED4;
+}
+
+.product {
+    width: 80%;
+    background-color: #39BAE8;
+}
+
+.data {
+    width: 65%;
+    background-color: #B9EDF8;
+}
+
+.increasetext {
+    margin: 10px 0 0;
+}
+
+.Mestitlpng {
+    width: 450px;
+}
+
+.meserp {
+    padding: 5px;
+    background-color: #fff;
+}
+
+.meserpcolor {
+    color: #fff !important;
+    background-color: #ffa500 !important;
+    padding: 0.01em 16px;
+}
+
+.meserpword {
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.erppng {
+    width: 400px;
+    margin-left: 20px;
+}
+/* Product-Wms
+  -------------------------------------------------- */
+.wmscard {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+    transition: 0.5s;
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.wmsimgBx {
+    position: absolute;
+    top: -50px;
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 15px 20px rgba(0,0,0,0.35);
+    display: flex;
+    padding: 10px;
+    color: #fff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+    .wmsimgBx img {
+        width: 64px;
+        height: 64px;
+    }
 /*Index*/
 .indexCardImg{
     width: 200px;
@@ -199,6 +326,15 @@ h2, h3, p {
     animation: cloudmove  3s linear infinite;
 }
 
+#productHeaderCloud{
+    padding-top: 50px;
+    position: fixed;
+    top: 350px;
+    right: -200px;
+    z-index: -1;
+    animation: cloudmove  3s linear infinite;
+}
+
 @keyframes cloudmove{
     25%{
         transform: translate(4px,-4px);
@@ -211,10 +347,13 @@ h2, h3, p {
     }
 }
 
-.x1 {
+.indexCloud {
 	transform: scale(2);
 }
 
+.productCloud{
+	transform: scale(3);
+}
 /* OBJECTS */
 
 .cloud {

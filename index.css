@@ -5,11 +5,30 @@ html {
 }
 body{
     margin: 0;
+    background-color: #f4f4f4;
 }
 h2, h3, p { 
+    margin: 0;
     font-family: futura pt light,'Noto Sans TC', sans-serif;
 }
+img{
+    border-radius: 20px;
+}
 /*Public*/
+#Headerbackground {
+    padding-top: 50px;
+    position: fixed;
+    bottom: 150px;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    animation: cloudmove  3s linear infinite;
+}
+
+.HeaderCloud {
+	transform: scale(3) rotate(180deg);
+}
+
 .block{
     margin-bottom: 20px;
     padding: 20px;
@@ -22,6 +41,14 @@ h2, h3, p {
 .catablock{
     width: 100%;
     border-bottom: 0.5px solid #babecc;
+    font-family: futura pt light,'Noto Sans TC', sans-serif;
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }
 
 .Footercontainer {
@@ -56,11 +83,17 @@ h2, h3, p {
 }
 
 .blockFont{
-    width: 70%;
+    width: 350px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+    margin-right: 20px;
 }
 
 .Fonth1 {
     font-size: 34px;
+    margin-bottom: 5px;
 }
 
 .cato{
@@ -107,6 +140,7 @@ h2, h3, p {
 .triangle{
     width: 300px;
     height: 300px;
+    border-radius: 50%;
     background-color: orange;
     transform: rotate(45deg);
     position: absolute;
@@ -124,6 +158,7 @@ h2, h3, p {
     left: 130px;
     cursor: pointer;
     z-index: 0;
+    top: 0;
 }
 
 .smalltriangle-text{
@@ -131,6 +166,14 @@ h2, h3, p {
     position: absolute;
     left: 20px;
     top: 30px;
+    font-family: futura pt light,'Noto Sans TC', sans-serif;
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }
 
 .setting{
@@ -171,6 +214,7 @@ h2, h3, p {
 .columnCss{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .theContainer{
     display: flex;
@@ -178,11 +222,19 @@ h2, h3, p {
     align-items: center;
     flex-direction: column;
 }
+#productHeaderCloud{
+    padding-top: 50px;
+    position: fixed;
+    top: 350px;
+    right: -200px;
+    z-index: -1;
+    animation: cloudmove  3s linear infinite;
+}
 /* Product-Mes
 -------------------------------------------------- */
 .mesincrease {
     width: 500px;
-    background-color: #EAEAEA;
+    background-color: #fff;
 }
 
 .increase {
@@ -234,7 +286,8 @@ h2, h3, p {
 }
 
 .meserpword {
-    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0,0,0,0.15);
 }
 
 .erppng {
@@ -278,6 +331,25 @@ h2, h3, p {
         width: 64px;
         height: 64px;
     }
+    /* Product-Rfid
+  -------------------------------------------------- */
+  .ProductRfidImg{
+      width: 500px;
+  }
+  
+  /* Case-Wms
+-------------------------------------------------- */
+#caseHeaderCloud{
+    padding-top: 50px;
+    position: fixed;
+    right: -200px;
+    z-index: -1;
+    bottom: 100px;
+    animation: cloudmove  3s linear infinite;
+}
+.caseCloud{
+	transform: scale(2);
+}
 /*Index*/
 .indexCardImg{
     width: 200px;
@@ -285,35 +357,70 @@ h2, h3, p {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: -5px -5px 20px #babecc, 5px 5px 20px #39BAE8;
+    box-shadow: 0 35px 80px rgba(0,0,0,0.15);
     margin-bottom: 20px;
 }
 
-.indexCard{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.indexGoogleMap{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+    margin-bottom: 20px;
 }
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 35px 80px rgb(0 0 0 / 15%);
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: #39BAE8;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 35px 80px rgb(0 0 0 / 15%);
+    transform: rotateY(180deg);
+  }
 
 .midindexCard{
     margin-left: 30px;
     margin-right: 30px;
 }
 
-.Background {
-	background: linear-gradient(#39BAE8,#caeefa);
-	color: #333;
-	font: 100% Arial, Sans Serif;
-    width: 100%;
-	margin: 0;
-	padding: 0;
-	overflow-x: hidden;
-    z-index: -2;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
 
 #background-wrap {
     left: 50;
@@ -322,15 +429,6 @@ h2, h3, p {
     right: 0;
     bottom: 150px;
     top: 100;
-    z-index: -1;
-    animation: cloudmove  3s linear infinite;
-}
-
-#productHeaderCloud{
-    padding-top: 50px;
-    position: fixed;
-    top: 350px;
-    right: -200px;
     z-index: -1;
     animation: cloudmove  3s linear infinite;
 }
@@ -354,17 +452,16 @@ h2, h3, p {
 .productCloud{
 	transform: scale(3);
 }
-/* OBJECTS */
 
 .cloud {
 	background: #fff;
-	background: -moz-linear-gradient(top,  #fff 5%, #f1f1f1 100%);
+	background: -moz-linear-gradient(top,  #B9EDF8 5%, #39BAE8 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(5%,#fff), color-stop(100%,#f1f1f1));
-	background: -webkit-linear-gradient(top,  #fff 5%,#f1f1f1 100%);
-	background: -o-linear-gradient(top,  #fff 5%,#f1f1f1 100%);
-	background: -ms-linear-gradient(top,  #fff 5%,#f1f1f1 100%);
-	background: linear-gradient(top,  #fff 5%,#f1f1f1 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#f1f1f1',GradientType=0 );
+	background: -webkit-linear-gradient(top,  #B9EDF8 5%,#39BAE8 100%);
+	background: -o-linear-gradient(top,  #B9EDF8 5%,#39BAE8 100%);
+	background: -ms-linear-gradient(top,  #B9EDF8 5%,#39BAE8 100%);
+	background: linear-gradient(top,  #B9EDF8 5%,#39BAE8 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#B9EDF8', endColorstr='#39BAE8',GradientType=0 );
 	
 	-webkit-border-radius: 100px;
 	-moz-border-radius: 100px;
@@ -380,7 +477,7 @@ h2, h3, p {
 }
 
 .cloud:after, .cloud:before {
-    background: #fff;
+    background: #B9EDF8;
 	content: '';
 	position: absolute;
 	z-indeX: -1;
@@ -456,10 +553,26 @@ h2, h3, p {
 }
 
 @media (max-width: 768px){
+    .indexBigImg{
+        width: 350px;
+    }
+    .blockFont{
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .indexCardImg{
+        margin-bottom: 20px;
+    }
+    .theContainer{
+        margin-top: 150px;
+    }
     .rowCss{
         flex-direction: column;
     }
     .ContactContainer{
         align-items: center;
+    }
+    .ProductRfidImg{
+        width: 300px;
     }
 }

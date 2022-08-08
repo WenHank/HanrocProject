@@ -13,140 +13,230 @@
       <div class="toggle">
         <div class="triangle"></div>
         <div class="setting">
-          <img
-            class="settingIcon"
-            src="data:image/png;base64,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"
-          />
-          <div style="color: white">See more</div>
+          <img class="settingIcon" src="../Img/Layout/logo.png" />
+          <div class="settingFont">Learn more</div>
         </div>
       </div>
-
       <div class="slide">
-        <div class="block" style="margin-top: 200px">
-          <h1 class="cato">目錄</h1>
-          <h2 class="catablock">首頁</h2>
-          <a href="../Home/inedx.html" style="text-decoration: none">
-            <div class="FontP">。首頁</div>
-          </a>
+        <div class="block" style="margin-top: 200px; width: 100%">
+          <h1 class="cata">CATA</h1>
+          <div class="columnCss" style="width: 100%">
+            <h2 class="catablock">首頁</h2>
+            <a href="../Home/inedx.html" class="slideItem">
+              <div class="sliderowCss">
+                <div>About Us</div>
+                <img
+                  class="seemore"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAAAgElEQVRIie3VsQ3CQAxA0UdSIKBIFSmswxjMwQZhLEagomGH7BCJAgoKihRW7iT8S1v2l3U6myRJgmiD+uzQYF5a0ASJL7ijD+q3mD1ueGIoKT+mvBr55kesw4htgPz8kZ8wfSejvlM1FHnn4tLVFsn/SOGKhwJH4uA9dZIk6/MCyxcX/g04HJsAAAAASUVORK5CYII="
+                />
+              </div>
+            </a>
+          </div>
           <div class="columnCss" style="width: 100%">
             <h2 class="catablock">產品介紹</h2>
-            <a href="../Product/MES.html" style="text-decoration: none">
-              <div class="FontP">。MES</div>
+            <a href="../Product/MES.html" class="slideItem">
+              <div class="sliderowCss">
+                <div>MES</div>
+                <img
+                  class="seemore"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAAAgElEQVRIie3VsQ3CQAxA0UdSIKBIFSmswxjMwQZhLEagomGH7BCJAgoKihRW7iT8S1v2l3U6myRJgmiD+uzQYF5a0ASJL7ijD+q3mD1ueGIoKT+mvBr55kesw4htgPz8kZ8wfSejvlM1FHnn4tLVFsn/SOGKhwJH4uA9dZIk6/MCyxcX/g04HJsAAAAASUVORK5CYII="
+                />
+              </div>
             </a>
-            <a href="../Product/WMS.html" style="text-decoration: none">
-              <div class="FontP">。WMS</div>
+            <a href="../Product/WMS.html" class="slideItem">
+              <div class="sliderowCss">
+                <div>WMS</div>
+                <img
+                  class="seemore"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAAAgElEQVRIie3VsQ3CQAxA0UdSIKBIFSmswxjMwQZhLEagomGH7BCJAgoKihRW7iT8S1v2l3U6myRJgmiD+uzQYF5a0ASJL7ijD+q3mD1ueGIoKT+mvBr55kesw4htgPz8kZ8wfSejvlM1FHnn4tLVFsn/SOGKhwJH4uA9dZIk6/MCyxcX/g04HJsAAAAASUVORK5CYII="
+                />
+              </div>
             </a>
-            <a href="../Product/RFID.html" style="text-decoration: none">
-              <div class="FontP">。RFID</div>
+            <a href="../Product/RFID.html" class="slideItem">
+              <div class="sliderowCss">
+                <div>RFID</div>
+                <img
+                  class="seemore"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAAAgElEQVRIie3VsQ3CQAxA0UdSIKBIFSmswxjMwQZhLEagomGH7BCJAgoKihRW7iT8S1v2l3U6myRJgmiD+uzQYF5a0ASJL7ijD+q3mD1ueGIoKT+mvBr55kesw4htgPz8kZ8wfSejvlM1FHnn4tLVFsn/SOGKhwJH4uA9dZIk6/MCyxcX/g04HJsAAAAASUVORK5CYII="
+                />
+              </div>
             </a>
           </div>
           <div class="columnCss" style="width: 100%">
-            <h2 class="catablock">情境說明</h2>
-            <a href="../Case/MES.html" style="text-decoration: none">
-              <div class="FontP">。MES</div>
+            <h2 class="catablock">成功案例</h2>
+            <a href="../Case/MES.html" class="slideItem">
+              <div class="sliderowCss">
+                <div>MES</div>
+                <img
+                  class="seemore"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAAAgElEQVRIie3VsQ3CQAxA0UdSIKBIFSmswxjMwQZhLEagomGH7BCJAgoKihRW7iT8S1v2l3U6myRJgmiD+uzQYF5a0ASJL7ijD+q3mD1ueGIoKT+mvBr55kesw4htgPz8kZ8wfSejvlM1FHnn4tLVFsn/SOGKhwJH4uA9dZIk6/MCyxcX/g04HJsAAAAASUVORK5CYII="
+                />
+              </div>
             </a>
-            <a href="../Case/WMS.html" style="text-decoration: none">
-              <div class="FontP">。WMS</div>
+            <a href="../Case/WMS.html" class="slideItem">
+              <div class="sliderowCss">
+                <div>WMS</div>
+                <img
+                  class="seemore"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAAAgElEQVRIie3VsQ3CQAxA0UdSIKBIFSmswxjMwQZhLEagomGH7BCJAgoKihRW7iT8S1v2l3U6myRJgmiD+uzQYF5a0ASJL7ijD+q3mD1ueGIoKT+mvBr55kesw4htgPz8kZ8wfSejvlM1FHnn4tLVFsn/SOGKhwJH4uA9dZIk6/MCyxcX/g04HJsAAAAASUVORK5CYII="
+                />
+              </div>
             </a>
-            <a href="../Case/MES.html" style="text-decoration: none">
-              <div class="FontP">。RFID</div>
+            <a href="../Case/RFID.html" class="slideItem">
+              <div class="sliderowCss">
+                <div>RFID</div>
+                <img
+                  class="seemore"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAAAgElEQVRIie3VsQ3CQAxA0UdSIKBIFSmswxjMwQZhLEagomGH7BCJAgoKihRW7iT8S1v2l3U6myRJgmiD+uzQYF5a0ASJL7ijD+q3mD1ueGIoKT+mvBr55kesw4htgPz8kZ8wfSejvlM1FHnn4tLVFsn/SOGKhwJH4uA9dZIk6/MCyxcX/g04HJsAAAAASUVORK5CYII="
+                />
+              </div>
             </a>
           </div>
-        </div>
-      </div>
-      <div id="Headerbackground">
-        <div class="HeaderCloud">
-          <div class="cloud"></div>
         </div>
       </div>
     </label>
-
     <div class="theContainer">
-      <div id="background-wrap">
-        <div class="indexCloud">
-          <div class="cloud"></div>
+      <div class="indexHaeder">
+        <div class="indexHaeder-font">
+          <div class="BigTitleW">智慧工廠</div>
+          <p class="FontPBL">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis ex
+            optio commodi quod nihil corporis nostrum ea quidem vel voluptates?
+            Culpa quibusdam quasi sequi dolore a omnis delectus laborum
+            veritatis. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Debitis ex optio commodi quod nihil corporis nostrum ea quidem vel
+            voluptates? Culpa quibusdam quasi sequi dolore a omnis delectus
+            laborum veritatis.
+          </p>
+        </div>
+        <img class="indexHeaderImg" src="../Img/Home/homeheader.png" />
+      </div>
+      <div class="index-about-block">
+        <div class="columnCss">
+          <div class="BigTitleB">關於漢鼎</div>
+          <p class="FontPW">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis ex
+            optio commodi quod nihil corporis nostrum ea quidem vel voluptates?
+            Culpa quibusdam quasi sequi dolore a omnis delectus laborum
+            veritatis. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Debitis ex optio commodi quod nihil corporis nostrum ea quidem vel
+            voluptates? Culpa quibusdam quasi sequi dolore a omnis delectus
+            laborum veritatis.
+          </p>
+        </div>
+        <img src="../Img/Home/hand.png" class="indexAboutImg" />
+      </div>
+      <div class="leftGears">
+        <img src="../Img/Home/gearBL.png" class="gearBL" />
+        <div class="columnCss">
+          <img src="../Img/Home/gearB.png" class="gearB" />
+          <img src="../Img/Home/gearOG.png" class="gearOG" />
         </div>
       </div>
       <div class="block">
-        <div class="rowCss">
-          <div class="columnCss">
-            <h2 class="Fonth1">關於漢鼎</h2>
-            <div class="blockFont">
-              <p class="FontP">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Debitis ex optio commodi quod nihil corporis nostrum ea quidem
-                vel voluptates? Culpa quibusdam quasi sequi dolore a omnis
-                delectus laborum veritatis. Lorem ipsum dolor sit amet
-                consectetur, adipisicing elit. Debitis ex optio commodi quod
-                nihil corporis nostrum ea quidem vel voluptates? Culpa quibusdam
-                quasi sequi dolore a omnis delectus laborum veritatis.
-              </p>
+        <h2 class="BigTitleB">產品介紹</h2>
+        <div class="indexCards">
+          <div class="indexCards-2">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img
+                    src="../Img/Home/product-mes.png"
+                    class="homeproductlogo"
+                  />
+                  <p class="FontW">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  </p>
+                </div>
+                <div class="flip-card-back">
+                  <div class="flip-card-font">
+                    <h1>MES</h1>
+                    <p class="FontPBL" style="width: 250px">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Debitis ex optio commodi quod nihil corporis nostrum ea
+                      quidem vel
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flip-card midindexCard">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img
+                    src="../Img/Home/product-rfid.png"
+                    class="homeproductlogo"
+                  />
+                  <p class="FontW">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  </p>
+                </div>
+                <div class="flip-card-back">
+                  <div class="flip-card-font">
+                    <h1>RFID</h1>
+                    <p class="FontPBL" style="width: 250px">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Debitis ex optio commodi quod nihil corporis nostrum ea
+                      quidem vel
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <img src="../Img/Home/home1.jpg" class="indexBigImg" />
-        </div>
-      </div>
-      <div class="block">
-        <h2 class="Fonth1">產品介紹</h2>
-        <div class="rowCss">
+
           <div class="flip-card">
             <div class="flip-card-inner">
-              <div class="flip-card-front">MES font</div>
-              <div class="flip-card-back">MES back</div>
-            </div>
-          </div>
-          <div class="flip-card midindexCard">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">RFID font</div>
-              <div class="flip-card-back">RFID back</div>
-            </div>
-          </div>
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">WMS font</div>
-              <div class="flip-card-back">WMS back</div>
+              <div class="flip-card-front">
+                <img
+                  src="../Img/Home/product-wms.png"
+                  class="homeproductlogo"
+                />
+                <p class="FontW">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </p>
+              </div>
+              <div class="flip-card-back">
+                <div class="flip-card-font">
+                  <h1>WMS</h1>
+                  <p class="FontPBL" style="width: 250px">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Debitis ex optio commodi quod nihil corporis nostrum ea
+                    quidem vel
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="block">
-        <div class="rowCss">
-          <div class="columnCss ContactContainer">
-            <h2 class="Fonth1">聯絡我們</h2>
-            <p class="FontP">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
-              ex optio commodi quod nihil corporis nostrum ea quidem vel
-              voluptates? Culpa quibusdam quasi sequi dolore a omnis delectus
-              laborum veritatis. Lorem ipsum dolor sit amet consectetur,
-            </p>
-            <div>姓名</div>
-            <input type="text" class="Contactinput" placeholder="必填" />
-            <div>電話</div>
-            <input type="text" class="Contactinput" placeholder="必填" />
-            <div>信箱</div>
-            <input type="email" class="Contactinput" placeholder="必填" />
-            <div>產品</div>
-            <select class="Contactselect">
-              <option>MES</option>
-              <option>WMS</option>
-              <option>RFID</option>
-            </select>
-            <button type="submit" class="buttonCss" style="margin-top: 50px">
-              Submit
-            </button>
-          </div>
-          <div class="indexGoogleMap">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.015014264236!2d121.2211144348877!3d24.9656038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346822304d65fd8b%3A0x31c90e9c8479f129!2z5qGD5ZyS5biC5pS_5bqc6Z2S5bm05LqL5YuZ5bGA!5e0!3m2!1szh-TW!2stw!4v1657766449631!5m2!1szh-TW!2stw"
-              width="400"
-              height="400"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            >
-            </iframe>
-          </div>
+      <div class="indexContactblock">
+        <div class="indexGoogleMap">
+          <button class="homemapbtn1">中和分部</button>
+          <button class="homemapbtn2">中壢分部</button>
+          <img src="../Img/Home/map.png" class="homemap" />
+        </div>
+        <div class="ContactContainer">
+          <h2 class="BigTitleB">聯絡我們</h2>
+          <p class="FontPW">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis ex
+            optio commodi quod nihil corporis nostrum ea quidem vel
+          </p>
+          <div>姓名</div>
+          <input type="text" class="Contactinput" placeholder="必填" />
+          <div>電話</div>
+          <input type="text" class="Contactinput" placeholder="必填" />
+          <div>信箱</div>
+          <input type="email" class="Contactinput" placeholder="必填" />
+          <div>產品</div>
+          <select class="Contactselect">
+            <option>MES</option>
+            <option>WMS</option>
+            <option>RFID</option>
+          </select>
+          <button type="submit" class="buttonCss" style="margin-top: 50px">
+            Submit
+          </button>
         </div>
       </div>
     </div>

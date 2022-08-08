@@ -11,112 +11,14 @@ h2, h3, p {
     margin: 0;
     font-family: futura pt light,'Noto Sans TC', sans-serif;
 }
-img{
-    border-radius: 20px;
+label{
+    display: flex;
 }
+
 /*Public*/
-#Headerbackground {
-    padding-top: 50px;
-    position: fixed;
-    bottom: 150px;
-    top: 0px;
-    left: 0px;
-    z-index: -1;
-    animation: cloudmove  3s linear infinite;
-}
-
-.HeaderCloud {
-	transform: scale(3) rotate(180deg);
-}
-
-.block{
-    margin-bottom: 20px;
-    padding: 20px;
-    width: 70%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.catablock{
-    width: 100%;
-    border-bottom: 0.5px solid #babecc;
-    font-family: futura pt light,'Noto Sans TC', sans-serif;
-    display: block;
-    font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-}
-
-.Footercontainer {
-    color: #fff;
-    border-top: 1px solid #e5e5e5;
-    position: absolute;
-    justify-content: center;
-    width: 100%;
-    white-space: nowrap;
-    background-color: #000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 50px;
-}
-
-.buttonCss {
-    background-color: #ffa500;
-    color: aliceblue;
-    border-radius: 10px;
-    border: #ffa500;
-    width: 200px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.buttonCss:hover {
-    background-color: #39BAE8;
-    color: black;
-}
-
-.blockFont{
-    width: 350px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 35px 80px rgba(0,0,0,0.15);
-    margin-right: 20px;
-}
-
-.Fonth1 {
-    font-size: 34px;
-    margin-bottom: 5px;
-}
-
-.cato{
-    position: absolute;
-    top: 100px;
-    right: 20px;
-    font-size: 60px;
-}
-
-.FontP {
-    font-size: 19px;
-    color: #747474;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.Fonttitle{
-    font-size: 20px;
-    margin-bottom: 2px;
-}
-
 .slide{
     top: 0;
-    height: 100%;
+    height: auto;
     min-width: 220px;
     position: absolute;
     background-color: #fff;
@@ -128,6 +30,7 @@ img{
     transform: translateY(-150%);
     flex-direction: column;
     align-items: center;
+    z-index: 50;
 }
 
 .sidebarinput{
@@ -140,7 +43,6 @@ img{
 .triangle{
     width: 300px;
     height: 300px;
-    border-radius: 50%;
     background-color: orange;
     transform: rotate(45deg);
     position: absolute;
@@ -181,12 +83,20 @@ img{
     left: 20px;
     top: 20px;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .settingIcon{
     cursor: pointer;
     animation: cycleing 3s infinite linear;
     z-index: 2;
+    border-radius: 50%;
+}
+
+.settingFont{
+    color: #fff;
 }
 
 @keyframes cycleing {
@@ -198,12 +108,56 @@ img{
 	}
 }
 
- .toggle{
-    z-index: 1;
+.toggle{
+    z-index: 100;
 }
 
 .sidebarinput:checked ~ .slide {
     transform: translateY(0px);
+}
+
+.gearB{
+    width: 80px;
+    animation: cycleing 4s infinite linear;
+}
+.gearBL{
+    width: 100px;
+    animation: cycleing 4s infinite linear;
+}
+.gearOG{
+    width: 80px;
+    animation: reversecycleing 5s infinite linear;
+}
+.rightGears{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    right: 100px;
+}
+.leftGears{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    left: 100px;
+}
+@keyframes cycleing {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes reversecycleing {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(-360deg);
+	}
 }
 
 .rowCss{
@@ -211,10 +165,52 @@ img{
     flex-direction: row;
     align-items: center;
 }
+
 .columnCss{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.cata{
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    font-size: 60px;
+    color: #1A5A76;
+}
+
+.catablock{
+    color: #5BADD0;
+    width: 100%;
+    border-bottom: 0.5px solid #babecc;
+    font-family: futura pt light,'Noto Sans TC', sans-serif;
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.slideItem{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(93, 108, 116);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 200px;
+}
+.slideItem:hover{
+    color: #ABDEF4;
+}
+
+.sliderowCss{
+    margin: 10px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 .theContainer{
     display: flex;
@@ -222,295 +218,173 @@ img{
     align-items: center;
     flex-direction: column;
 }
-#productHeaderCloud{
-    padding-top: 50px;
-    position: fixed;
-    top: 350px;
-    right: -200px;
-    z-index: -1;
-    animation: cloudmove  3s linear infinite;
-}
-/* Product-Mes
--------------------------------------------------- */
-.mesincrease {
-    width: 500px;
-    background-color: #fff;
-}
 
-.increase {
-    text-align: right;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: white;
-    transition: 1s;
-    width: 70px;
-    height: 40px;
-}
-
-.increase:hover {
-    width: 50px;
-}
-
-.efficacy {
-    width: 90%;
-    background-color: #1F6ED4;
-}
-
-.product {
-    width: 80%;
-    background-color: #39BAE8;
-}
-
-.data {
-    width: 65%;
-    background-color: #B9EDF8;
-}
-
-.increasetext {
-    margin: 10px 0 0;
-}
-
-.Mestitlpng {
-    width: 450px;
-}
-
-.meserp {
-    padding: 5px;
-    background-color: #fff;
-}
-
-.meserpcolor {
-    color: #fff !important;
-    background-color: #ffa500 !important;
-    padding: 0.01em 16px;
-}
-
-.meserpword {
-    border-radius: 20px;
-    box-shadow: 0 35px 80px rgba(0,0,0,0.15);
-}
-
-.erppng {
-    width: 400px;
-    margin-left: 20px;
-}
-/* Product-Wms
-  -------------------------------------------------- */
-.wmscard {
-    position: relative;
-    width: 350px;
-    height: 350px;
-    background: #fff;
-    border-radius: 20px;
-    box-shadow: 0 35px 80px rgba(0,0,0,0.15);
-    transition: 0.5s;
-    margin-right: 30px;
+.block{
+    margin: 100px 0 0 0;
+    padding: 20px;
+    width: 70%;
     display: flex;
-    justify-content: center;
-}
-
-
-.wmsimgBx {
-    position: absolute;
-    top: -50px;
-    width: 100px;
-    height: 100px;
-    background-color: #fff;
-    border-radius: 20px;
-    box-shadow: 0 15px 20px rgba(0,0,0,0.35);
-    display: flex;
-    padding: 10px;
-    color: #fff;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    font-size: 2rem;
+    flex-direction: column;
 }
 
-    .wmsimgBx img {
-        width: 64px;
-        height: 64px;
-    }
-    /* Product-Rfid
-  -------------------------------------------------- */
-  .ProductRfidImg{
-      width: 500px;
-  }
-  
-  /* Case-Wms
--------------------------------------------------- */
-#caseHeaderCloud{
-    padding-top: 50px;
-    position: fixed;
-    right: -200px;
-    z-index: -1;
-    bottom: 100px;
-    animation: cloudmove  3s linear infinite;
+.BigTitleW{
+    font-size: 60px;
+    color: #fff;
 }
-.caseCloud{
-	transform: scale(2);
+
+.BigTitleB{
+    font-size: 65px;
+}
+
+.FontPB {
+    max-width: 500px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.FontPW {
+    text-align: center;
+    max-width: 500px;
+    font-size: 20px;
+    color: rgb(93, 108, 116);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.FontPBL{
+    text-align: center;
+    font-size: 20px;
+    max-width: 500px;
+    color: #d7dde5;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 /*Index*/
-.indexCardImg{
-    width: 200px;
+.homeproductlogo{
     height: 200px;
-    background-color: #fff;
-    padding: 20px;
+    width: 200px;
     border-radius: 10px;
-    box-shadow: 0 35px 80px rgba(0,0,0,0.15);
-    margin-bottom: 20px;
+}
+.indexHaeder{
+    width: 100%;
+    height: 600px;
+    background-size: 100% 100%;
+    background-image: url(./Img/Home/indexbackground.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.index-about-block{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 32px 0 32px;
+    justify-content: center;
+}
+.indexHeaderImg{
+    width: 500px;
+    border-radius: 20px;
+}
+.indexAboutImg{
+    width: 500px;
 }
 
-.indexGoogleMap{
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 35px 80px rgba(0,0,0,0.15);
-    margin-bottom: 20px;
+.indexCards{
+    margin: 50px 0 0 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
 }
+
+.indexCards-2{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
 .flip-card {
+    margin: 20px;
     background-color: transparent;
     width: 300px;
     height: 300px;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
-  }
+}
   
-  /* This container is needed to position the front and back side */
-  .flip-card-inner {
+.flip-card-inner {
     position: relative;
     width: 100%;
     height: 100%;
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
-  }
+}
   
-  /* Do an horizontal flip when you move the mouse over the flip box container */
-  .flip-card:hover .flip-card-inner {
+.flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
-  }
+}
   
-  /* Position the front and back side */
-  .flip-card-front, .flip-card-back {
+.flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
-  }
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
   
-  /* Style the front side (fallback if image is missing) */
-  .flip-card-front {
+.flip-card-front {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 35px 80px rgb(0 0 0 / 15%);
     color: black;
-  }
+}
   
-  /* Style the back side */
-  .flip-card-back {
-    background-color: #39BAE8;
+.flip-card-back {
+    background-color: #1A5A76;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     color: white;
     border-radius: 10px;
     box-shadow: 0 35px 80px rgb(0 0 0 / 15%);
     transform: rotateY(180deg);
-  }
+    transform-style: preserve-3d;
+}
+
+.flip-card-font{
+    transform: translateZ(60px) scale(.94);
+}
 
 .midindexCard{
     margin-left: 30px;
     margin-right: 30px;
 }
 
-
-#background-wrap {
-    left: 50;
-    padding-top: 50px;
-    position: fixed;
-    right: 0;
-    bottom: 150px;
-    top: 100;
-    z-index: -1;
-    animation: cloudmove  3s linear infinite;
+.indexHaeder-font{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 35px 0 35px;
 }
 
-@keyframes cloudmove{
-    25%{
-        transform: translate(4px,-4px);
-    }
-    50%, 100%{
-        transform: translateX(0px,0px);
-    }
-    75%{
-        transform: translateX(-4px,4px);
-    }
+.indexContactblock{
+    width: 100%;
+    align-items: center;
+    background-color: #e8e8e8;
+    border-radius: 300px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 200px 0 0 0;
 }
-
-.indexCloud {
-	transform: scale(2);
-}
-
-.productCloud{
-	transform: scale(3);
-}
-
-.cloud {
-	background: #fff;
-	background: -moz-linear-gradient(top,  #B9EDF8 5%, #39BAE8 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(5%,#fff), color-stop(100%,#f1f1f1));
-	background: -webkit-linear-gradient(top,  #B9EDF8 5%,#39BAE8 100%);
-	background: -o-linear-gradient(top,  #B9EDF8 5%,#39BAE8 100%);
-	background: -ms-linear-gradient(top,  #B9EDF8 5%,#39BAE8 100%);
-	background: linear-gradient(top,  #B9EDF8 5%,#39BAE8 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#B9EDF8', endColorstr='#39BAE8',GradientType=0 );
-	
-	-webkit-border-radius: 100px;
-	-moz-border-radius: 100px;
-	border-radius: 100px;
-	
-	-webkit-box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
-	-moz-box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
-	box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
-
-	height: 120px;
-	position: relative;
-	width: 350px;
-}
-
-.cloud:after, .cloud:before {
-    background: #B9EDF8;
-	content: '';
-	position: absolute;
-	z-indeX: -1;
-}
-
-
-.cloud:after {
-	-webkit-border-radius: 100px;
-	-moz-border-radius: 100px;
-	border-radius: 100px;
-
-	height: 100px;
-	left: 50px;
-	top: -50px;
-	width: 100px;
-}
-
-.cloud:before {
-	-webkit-border-radius: 200px;
-	-moz-border-radius: 200px;
-	border-radius: 200px;
-
-	width: 180px;
-	height: 180px;
-	right: 50px;
-	top: -90px;
-}
-
-.indexBigImg{
-    width: 600px;
-    border-radius: 10px;
-}
-
 .Contactinput {
     width: 250px;
     display: block;
@@ -531,7 +405,7 @@ img{
 
 .Contactselect {
     display: block;
-    width: 250px;
+    width: 270px;
     padding: 0.375rem 0.75rem;
     font-size: 1rem;
     font-weight: 400;
@@ -548,31 +422,670 @@ img{
 }
 
 .ContactContainer{
-    width: 400px;
     margin-right: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
-@media (max-width: 768px){
-    .indexBigImg{
-        width: 350px;
+.indexGoogleMap{
+    position: relative;
+    top: -100px;
+    left: -50px;
+    margin-bottom: 20px;
+}
+
+.homemap{
+    width: 350px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+}
+
+.homemapbtn1{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 85px;
+    left: 70px;
+    width: 100px;
+    background-color: #ffa500;
+    color: white;
+    height: 30px;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.homemapbtn2{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 98px;
+    left: 30px;
+    width: 100px;
+    background-color: #ffa500;
+    color: white;
+    height: 30px;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.homemapbtn1:hover {
+    background-color: #fff;
+    color: black;
+    border: #000 0.5px solid;
+}
+
+.homemapbtn2:hover {
+    background-color: #fff;
+    border: #000 0.5px solid;
+    color: black;
+}
+
+.buttonCss {
+    background-color: #ffa500;
+    color: aliceblue;
+    border-radius: 10px;
+    border: #ffa500;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonCss:hover {
+    background-color: #fff;
+    color: black;
+}
+/*Footer*/
+.Footercontainer {
+    color: #fff;
+    border-top: 1px solid #e5e5e5;
+    position: absolute;
+    justify-content: center;
+    width: 100%;
+    white-space: nowrap;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50px;
+}
+/*Product*/
+.productHaeder{
+    width: 100%;
+    height: 600px;
+    border-radius: 0 0 800px 0;
+    background-color: #1A5A76;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.productHaeder-font{
+    display: flex;
+    flex-direction: column;
+    padding: 0 35px 0 35px;
+    align-items: center;
+}
+
+.PHeaderImg{
+    width: 500px;
+    border-radius: 20px;
+    animation: move  3s linear infinite;
+}
+@keyframes move{
+    25%{
+        transform: translate(4px,-4px);
     }
-    .blockFont{
-        margin-right: 0;
-        margin-bottom: 20px;
+    50%, 100%{
+        transform: translateX(0px,0px);
     }
-    .indexCardImg{
-        margin-bottom: 20px;
+    75%{
+        transform: translateX(-4px,4px);
     }
-    .theContainer{
-        margin-top: 150px;
+}
+.CircleS {
+    display: flex;
+    flex-direction: row;
+}
+.circle {
+    width: 200px;
+    height: 200px;
+    border: 8px solid rgb(70, 70, 70);
+    border-radius: 50%;
+    position: relative;
+    margin: 30px;
+    min-width: 200px;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+}
+
+.product-block{
+    margin: 50px 0 50px 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.product-font{
+    margin-left: 30px;
+    padding: 20px;
+    align-items: center;
+    background-color: #ABDEF4;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.Mesapplication{
+    width: 800px;
+    border-radius: 20px;
+}
+
+.Wmsapplication, .wmsconclustion{
+    width: 400px;
+}
+
+.product-bigblock{
+    margin: 200px 0 0 0;
+    width: 100%;
+    align-items: center;
+    background-color: #e8e8e8;
+    border-radius: 600px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-benefit-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    flex: calc(calc(100% / 4) - 48px);
+}
+.product-benefit-title{
+    font-size: 40px;
+}
+.benefit-block{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.benefit-block-two{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.product-img-font{
+    padding: 0 35px 0 35px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+/*mes*/
+.product-mes-benefit{
+    height: 150px;
+}
+.rfidconclustion{
+    width: 500px;
+}
+.product-rfid-factories{
+    position: relative;
+    top: -140px;
+    left: -300px;
+}
+/*wms*/
+.P-wms-HeaderImg{
+    width: 700px;
+    border-radius: 20px;
+    animation: move  3s linear infinite;
+}
+
+.product-wms-block{
+    padding: 100px;
+    margin: 200px 0 0 0;
+    width: 100%;
+    border-radius: 0 800px 0 0;
+    align-items: center;
+    background-color: #1A5A76;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-wms-bigblock{
+    width: 100%;
+    align-items: center;
+    background-color: #e8e8e8;
+    border-radius: 600px 0 0 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wmsimgBx {
+    position: absolute;
+    top: -50px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 15px 20px rgba(0,0,0,0.35);
+    display: flex;
+    padding: 10px;
+    color: #fff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.wmscard {
+    position: relative;
+    height: 350px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+    transition: 0.5s;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+.wmscardS{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+.wmscardS-2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.WMStitle{
+    width: 500px;
+}
+.wms-factory{
+    width: 130px;
+    position: relative;
+    right: -500px;
+}
+.wms-cloud{
+    width: 130px;
+    position: relative;
+    right: -500px;
+    animation: fadein  3s ease infinite;
+}
+@keyframes fadein {
+    0% {
+        opacity: 0.8;
     }
-    .rowCss{
+    25%{
+        transform: translate(4px,-4px);
+    }
+    50%{
+        transform: translateX(0px,0px);
+    }
+    75%{
+        transform: translateX(-4px,4px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+}
+.product-block-factorycloud{
+    margin: 50px 0 0 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/*RFID*/
+.productRFIDheader{
+    width: 500px;
+    border-radius: 20px;
+}
+.product-rfid-bigblock{
+    margin: 200px 0 0 0;
+    width: 100%;
+    align-items: center;
+    background-color: #e8e8e8;
+    border-radius: 600px 600px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.product-rfid-block{
+    margin: 200px 0 0 0;
+    width: 100%;
+    border-radius: 0 800px 0 0;
+    align-items: center;
+    background-color: #1A5A76;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+
+@media (min-width: 300px){
+    /*public*/
+    .BigTitleB{
+        font-size: 40px;
+    }
+    .BigTitleW{
+        font-size: 40px;
+    }
+    .triangle{
+        top: -200px;
+        left: -200px;
+        position: fixed;
+    }
+    .setting{
+        top: 10px;
+        left: 10px;
+        position: fixed;
+    }
+    .settingFont{
+        display: none;
+    }
+    .settingIcon{
+        width: 50px;
+    }
+    .slide{
+        height: auto;
+        width: 100%;
+        position: fixed;
+    }
+    .leftGears , .rightGears{
+        display: none;
+    }
+    /*product*/
+    .productHaeder{
         flex-direction: column;
     }
+    .productHaeder-font{
+        margin: 50px 0 0 0;
+    }
+    .product-img-font{
+        flex-direction: column;
+    }
+    .benefit-block-two{
+        flex-direction: column;
+    }
+    .product-wms-block{
+        flex-direction: column;
+        padding: 50px 35px 50px 35px;
+    }
+    .product-bigblock{
+        margin: 100px 0 0 0;
+    }
+    .PHeaderImg , .P-wms-HeaderImg , .Mesapplication , .Wmsapplication , .wmsconclustion , .Mesconclusion , .rfidconclustion{
+        width: 80%;
+    }
+    .wmscardS-2{
+        flex-direction: column;
+        margin: 0;
+    }
+    .wmscardS{
+        flex-direction: column;
+    }
+    .wmscard{
+        margin-bottom: 50px;
+    }
     .ContactContainer{
+        margin: 0 0 50px 0;
+        padding: 0 35px 0 35px;
+    }
+    .product-rfid-block{
+        padding: 50px 35px 50px 35px;
+    }
+    .wms-factory, .wms-cloud{
+        display: none;
+     }
+    /*index*/
+    .homemapbtn1{
+        top: 75px;
+        width: 80px;
+    }
+    .homemapbtn2{
+        top: 80px;
+        width: 80px;
+    }
+    .indexHaeder-font{
+        margin:50px 0 0 0;
+    }
+    .indexContactblock{
+        flex-direction: column;
+    }
+    .indexHaeder{
+        flex-direction: column;
+        margin: 0 0 50px 0;
+    }
+    .index-about-block{
+        flex-direction: column;
+    }
+    .indexHeaderImg{
+        margin: 30px 0 30px 0;
+        width: 80%;
+    }
+    .indexCards{
+        flex-direction: column;
+    }
+    .indexAboutImg{
+        margin: 30px 0 0 0;
+        width: 80%;
+    }
+    .indexCards-2{
+        flex-direction: column;
+    }
+    .indexGoogleMap{
+        position: initial;
+    }
+    .homemap{
+        width: 300px;
+    }
+    .midindexCard{
+        margin: 0;
+    }
+    .benefit-block{
+        flex-direction: column;
+    }
+    .product-rfid-factories{
+        display: none;
+    }
+}
+@media (min-width: 768px){
+    /*product*/
+    .PHeaderImg , .P-wms-HeaderImg , .Mesapplication , .Wmsapplication , .wmsconclustion , .Mesconclusion , .rfidconclustion{
+        width: 40%;
+    }
+    .benefit-block{
+        display: flex;
+        flex-direction: column;
         align-items: center;
     }
-    .ProductRfidImg{
+    .benefit-block-two{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .wmscardS{
+        flex-direction: column;
+    }
+    .wmscardS-2{
+        margin: 0 0 50px 0;
+        flex-direction: row;
+    }
+    .product-img-font{
+        flex-direction: row;
+    }
+    .productHaeder{
+        flex-direction: row;
+    }
+    .product-rfid-factories{
+        display: initial;
+    }
+    .wms-factory, .wms-cloud{
+        display: initial;
+       right: -300px;
+    }
+    .slide{
+        width: 250px;
+    }
+    /*index*/
+    .indexHaeder{
+        flex-direction: row;
+    }
+    .index-about-block{
+        flex-direction: row;
+    }
+    .indexHeaderImg{
+        margin: 30px 0 30px 0;
+        width: 50%;
+    }
+    .indexCards{
+        flex-direction: column;
+    }
+    .indexAboutImg{
+        margin: 30px 0 0 0;
+        width: 60%;
+    }
+    .ContactContainer{
+        margin: 0 0 30px 0;
+        max-width: 350px;
+    }
+    .indexCards-2{
+        flex-direction: row;
+    }
+    .indexContactblock{
+        flex-direction: row;
+    }
+}
+@media (min-width: 1024px){
+    /*public*/
+    .leftGears , .rightGears{
+        display: flex;
+    }
+    .FontPB, .FontPW, .FontPBL{
         width: 300px;
+    }
+    .BigTitleB{
+        font-size: 60px;
+    }
+    .BigTitleW{
+        font-size: 60px;
+    }
+    .triangle{
+        top: -150px;
+        left: -150px;
+    }
+    .settingIcon{
+        width: 70px;
+    }
+    .setting{
+        top: 20px;
+        left: 20px;
+    }
+    .settingFont{
+        display: flex;
+    }
+    /*product*/
+    .productHaeder{
+        flex-direction: row;
+    }
+    .benefit-block{
+        flex-direction: column;
+    }
+    .benefit-block-two{
+        flex-direction: row;
+    }
+    .product-img-font{
+        flex-direction: row;
+    }
+    .Mesapplication{
+        width: 500px;
+    }
+    .Mesconclusion{
+        width: 500px;
+    }
+    .P-wms-HeaderImg{
+        width: 500px;
+    }
+    .wmscardS{
+        flex-direction: column;
+    }
+    .wmscardS-2{
+        flex-direction: row;
+    }
+    /*index*/
+    .homemap{
+        width: 350px;
+    }
+    .homemapbtn1{
+        top: 85px;
+        width: 100px;
+    }
+    .homemapbtn2{
+        top: 98px;
+        width: 100px;
+    }
+    .indexHaeder{
+        flex-direction: row;
+    }
+    .indexCards{
+        flex-direction: row;
+    }
+    .index-about-block{
+        flex-direction: row;
+    }
+    .indexCards-2{
+        flex-direction: row;
+    }
+    .indexContactblock{
+        flex-direction: row;
+    }
+}
+@media (min-width: 1440px){
+    .wms-factory, .wms-cloud{
+        right: -600px;
+        display: initial;
+    }
+    .benefit-block{
+        flex-direction: row;
+    }
+    .wmscardS{
+        flex-direction: row;
+    }
+    .wmscardS-2{
+        flex-direction: row;
+        margin: 0;
+    }
+    .homemap{
+        width: 350px;
+    }
+    .indexGoogleMap{
+        position: relative;
     }
 }

@@ -14,117 +14,178 @@
       <div class="toggle">
         <div class="triangle"></div>
         <div class="setting">
-          <img
-            class="settingIcon"
-            src="data:image/png;base64,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"
-          />
-          <div style="color: white">See more</div>
+          <img class="settingIcon" src="../Img/Layout/logo.png" />
+          <div class="settingFont">Learn more</div>
         </div>
       </div>
-
       <div class="slide">
-        <div class="block" style="margin-top: 200px">
-          <h1 class="cato">目錄</h1>
-          <h2 class="catablock">首頁</h2>
-          <a href="../Home/inedx.html" style="text-decoration: none">
-            <div class="FontP">。首頁</div>
-          </a>
+        <div class="block" style="margin-top: 200px; width: 100%">
+          <h1 class="cata">CATA</h1>
+          <div class="columnCss" style="width: 100%">
+            <h2 class="catablock">首頁</h2>
+            <a href="../Home/inedx.html" class="slideItem">
+              <div class="sliderowCss">
+                <div>About Us</div>
+                <img
+                  class="seemore"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAAAgElEQVRIie3VsQ3CQAxA0UdSIKBIFSmswxjMwQZhLEagomGH7BCJAgoKihRW7iT8S1v2l3U6myRJgmiD+uzQYF5a0ASJL7ijD+q3mD1ueGIoKT+mvBr55kesw4htgPz8kZ8wfSejvlM1FHnn4tLVFsn/SOGKhwJH4uA9dZIk6/MCyxcX/g04HJsAAAAASUVORK5CYII="
+                />
+              </div>
+            </a>
+          </div>
           <div class="columnCss" style="width: 100%">
             <h2 class="catablock">產品介紹</h2>
-            <a href="../Product/MES.html" style="text-decoration: none">
-              <div class="FontP">。MES</div>
+            <a href="../Product/MES.html" class="slideItem">
+              <div class="sliderowCss">
+                <div>MES</div>
+                <img
+                  class="seemore"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAAAgElEQVRIie3VsQ3CQAxA0UdSIKBIFSmswxjMwQZhLEagomGH7BCJAgoKihRW7iT8S1v2l3U6myRJgmiD+uzQYF5a0ASJL7ijD+q3mD1ueGIoKT+mvBr55kesw4htgPz8kZ8wfSejvlM1FHnn4tLVFsn/SOGKhwJH4uA9dZIk6/MCyxcX/g04HJsAAAAASUVORK5CYII="
+                />
+              </div>
             </a>
-            <a href="../Product/WMS.html" style="text-decoration: none">
-              <div class="FontP">。WMS</div>
+            <a href="../Product/WMS.html" class="slideItem">
+              <div class="sliderowCss">
+                <div>WMS</div>
+                <img
+                  class="seemore"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAAAgElEQVRIie3VsQ3CQAxA0UdSIKBIFSmswxjMwQZhLEagomGH7BCJAgoKihRW7iT8S1v2l3U6myRJgmiD+uzQYF5a0ASJL7ijD+q3mD1ueGIoKT+mvBr55kesw4htgPz8kZ8wfSejvlM1FHnn4tLVFsn/SOGKhwJH4uA9dZIk6/MCyxcX/g04HJsAAAAASUVORK5CYII="
+                />
+              </div>
             </a>
-            <a href="../Product/RFID.html" style="text-decoration: none">
-              <div class="FontP">。RFID</div>
+            <a href="../Product/RFID.html" class="slideItem">
+              <div class="sliderowCss">
+                <div>RFID</div>
+                <img
+                  class="seemore"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAAAgElEQVRIie3VsQ3CQAxA0UdSIKBIFSmswxjMwQZhLEagomGH7BCJAgoKihRW7iT8S1v2l3U6myRJgmiD+uzQYF5a0ASJL7ijD+q3mD1ueGIoKT+mvBr55kesw4htgPz8kZ8wfSejvlM1FHnn4tLVFsn/SOGKhwJH4uA9dZIk6/MCyxcX/g04HJsAAAAASUVORK5CYII="
+                />
+              </div>
             </a>
           </div>
           <div class="columnCss" style="width: 100%">
-            <h2 class="catablock">情境說明</h2>
-            <a href="../Case/MES.html" style="text-decoration: none">
-              <div class="FontP">。MES</div>
+            <h2 class="catablock">成功案例</h2>
+            <a href="../Case/MES.html" class="slideItem">
+              <div class="sliderowCss">
+                <div>MES</div>
+                <img
+                  class="seemore"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAAAgElEQVRIie3VsQ3CQAxA0UdSIKBIFSmswxjMwQZhLEagomGH7BCJAgoKihRW7iT8S1v2l3U6myRJgmiD+uzQYF5a0ASJL7ijD+q3mD1ueGIoKT+mvBr55kesw4htgPz8kZ8wfSejvlM1FHnn4tLVFsn/SOGKhwJH4uA9dZIk6/MCyxcX/g04HJsAAAAASUVORK5CYII="
+                />
+              </div>
             </a>
-            <a href="../Case/WMS.html" style="text-decoration: none">
-              <div class="FontP">。WMS</div>
+            <a href="../Case/WMS.html" class="slideItem">
+              <div class="sliderowCss">
+                <div>WMS</div>
+                <img
+                  class="seemore"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAAAgElEQVRIie3VsQ3CQAxA0UdSIKBIFSmswxjMwQZhLEagomGH7BCJAgoKihRW7iT8S1v2l3U6myRJgmiD+uzQYF5a0ASJL7ijD+q3mD1ueGIoKT+mvBr55kesw4htgPz8kZ8wfSejvlM1FHnn4tLVFsn/SOGKhwJH4uA9dZIk6/MCyxcX/g04HJsAAAAASUVORK5CYII="
+                />
+              </div>
             </a>
-            <a href="../Case/MES.html" style="text-decoration: none">
-              <div class="FontP">。RFID</div>
+            <a href="../Case/RFID.html" class="slideItem">
+              <div class="sliderowCss">
+                <div>RFID</div>
+                <img
+                  class="seemore"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAAAgElEQVRIie3VsQ3CQAxA0UdSIKBIFSmswxjMwQZhLEagomGH7BCJAgoKihRW7iT8S1v2l3U6myRJgmiD+uzQYF5a0ASJL7ijD+q3mD1ueGIoKT+mvBr55kesw4htgPz8kZ8wfSejvlM1FHnn4tLVFsn/SOGKhwJH4uA9dZIk6/MCyxcX/g04HJsAAAAASUVORK5CYII="
+                />
+              </div>
             </a>
           </div>
-        </div>
-      </div>
-      <div id="Headerbackground">
-        <div class="HeaderCloud">
-          <div class="cloud"></div>
         </div>
       </div>
     </label>
 
     <div class="theContainer">
-      <div id="productHeaderCloud">
-        <div class="productCloud">
-          <div class="cloud"></div>
+      <div class="productHaeder">
+        <div class="productHaeder-font">
+          <div class="BigTitleW">何謂WMS</div>
+          <p class="FontPBL">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis ex
+            optio commodi quod nihil corporis nostrum ea quidem vel voluptates?
+            Culpa quibusdam quasi sequi dolore a omnis delectus laborum
+            veritatis. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Debitis ex optio commodi quod nihil corporis nostrum ea quidem vel
+            voluptates? Culpa quibusdam quasi sequi dolore a omnis delectus
+            laborum veritatis.
+          </p>
         </div>
+        <img class="P-wms-HeaderImg" src="../Img/Product/WMS/wmsheader.png" />
       </div>
-      <div class="block">
-        <div class="rowCss">
-          <div class="columnCss">
-            <h1 class="Fonth1" style="justify-content: normal">WMS</h1>
-            <div class="blockFont">
-              <p class="FontP">
-                利用WMS系統設計的倉儲SOP，快速協調、更新、掌握貨物動向，
-                藉由電腦計算優化進貨、揀貨、出貨流程，大幅縮短處理時間，降低出貨錯誤率。
+      <div class="product-block-factorycloud">
+          <div class="BigTitleB" style="margin-bottom: 50px">優勢分析</div>
+          <div class="wmscardS">
+            <div class="wmscardS-2">
+              <div class="wmscard">
+                <img
+                  src="../Img/Product/WMS/productsavetime.png"
+                  class="product-mes-benefit wmsimgBx"
+                />
+                <div class="product-benefit-title">縮減時間</div>
+                <p class="FontPW">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Debitis ex
+                </p>
+              </div>
+              <div class="wmscard">
+                <img
+                  src="../Img/Product/WMS/productsavemoney.png"
+                  class="product-mes-benefit wmsimgBx"
+                />
+                <div class="product-benefit-title">節省金錢</div>
+                <p class="FontPW">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Debitis ex
+                </p>
+              </div>
+            </div>    
+            <div class="wmscard">
+              <img
+                src="../Img/Product/WMS/productsavespace.png"
+                class="product-mes-benefit wmsimgBx"
+              />
+              <div class="product-benefit-title">降低空間</div>
+              <p class="FontPW">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Debitis ex
               </p>
-              <p class="Fontsubtitle">優點一</p>
-              <p class="Fontsubtitle">優點二</p>
-              <p class="Fontsubtitle">優點三</p>
             </div>
-          </div>
-          <div>
+        </div>
+        <img src="../Img/Product/WMS/cloud.png" class="wms-cloud"/>
+        <img
+        src="../Img/Product/WMS/wmsfactory.png"
+        class="wms-factory"/>
+      </div>
+      <div class="product-wms-bigblock">
+        <div class="product-block">
+          <div class="BigTitleB">應用範圍</div>
+          <div class="product-img-font">
             <img
-              src="../Img/Product/WMS/wms-background.jpeg"
-              class="wmsProductbackground"
+              src="../Img/Product/WMS/wmsapplication.png"
+              class="Wmsapplication"
             />
+            <p class="FontPB">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
+              ex optio commodi quod nihil corporis nostrum ea quidem vel
+              voluptates? Culpa quibusdam quasi sequi dolore a omnis delectus
+              laborum veritatis. Lorem ipsum dolor sit amet consectetur,
+            </p>
           </div>
         </div>
       </div>
-      <div class="block">
-        <div class="columnCss" style="display: flex; align-items: center">
-          <div class="Fonth1" style="margin-bottom: 20px">WMS 流程架構</div>
-          <div>
-            <img src="../Img/Product/WMS/wms-process.png" style="width: 100%" />
-          </div>
-        </div>
-      </div>
-      <div class="block">
-        <div class="columnCss" style="display: flex; align-items: center">
-          <div class="Fonth1" style="margin-bottom: 50px">WMS 優勢分析</div>
-          <div class="rowCss" style="margin-bottom: 50px">
-            <div class="wmscard">
-              <div class="wmsimgBx" style="background: #4bb94b">時間</div>
-            </div>
-            <div class="wmscard">
-              <div class="wmsimgBx" style="background: #ffa500">金錢</div>
-            </div>
-            <div class="wmscard">
-              <div class="wmsimgBx" style="background: #39bae8">空間</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="block" style="border: none">
-        <div class="Fonth1">情境模擬</div>
-        <div
-          style="display: flex; justify-content: center; margin-bottom: 20px"
-        >
-          <img src="../Img/Product/RFID/rfiduse.png" style="width: 100%" />
-        </div>
-        <div style="display: flex; justify-content: center">
-          <a asp-area="" asp-controller="Case" asp-action="Wms">
-            <button type="button" class="buttonCss">WMS 情境模擬</button>
-          </a>
+      <div class="product-wms-block">
+        <div class="product-img-font"">
+          <p class="FontPBL">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis ex
+            optio commodi quod nihil corporis nostrum ea quidem vel voluptates?
+            Culpa quibusdam quasi sequi dolore a omnis delectus laborum
+            veritatis. Lorem ipsum dolor sit amet consectetur,
+          </p>
+          <img
+            src="../Img/Product/WMS/wmsconclustion.png"
+            class="wmsconclustion"
+          />
         </div>
       </div>
     </div>

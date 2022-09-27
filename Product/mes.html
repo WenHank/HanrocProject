@@ -14,16 +14,16 @@
       <div class="toggle">
         <div class="triangle"></div>
         <div class="setting">
-          <img class="settingIcon" src="../Img/Layout/logo.png" />
+          <img class="settingIcon" src="../Img/Home/logo.png" />
           <div class="settingFont">Learn more</div>
         </div>
       </div>
       <div class="slide">
-        <div class="block" style="margin-top: 200px; width: 100%">
+        <div class="catabigblock">
           <h1 class="cata">CATA</h1>
           <div class="columnCss" style="width: 100%">
             <h2 class="catablock">首頁</h2>
-            <a href="../Home/inedx.html" class="slideItem">
+            <a href="../Home/index.html" class="slideItem">
               <div class="sliderowCss">
                 <div>About Us</div>
                 <img
@@ -37,7 +37,7 @@
             <h2 class="catablock">產品介紹</h2>
             <a href="../Product/MES.html" class="slideItem">
               <div class="sliderowCss">
-                <div>MES</div>
+                <div>MES(製造執行系統)</div>
                 <img
                   class="seemore"
                   src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAAAgElEQVRIie3VsQ3CQAxA0UdSIKBIFSmswxjMwQZhLEagomGH7BCJAgoKihRW7iT8S1v2l3U6myRJgmiD+uzQYF5a0ASJL7ijD+q3mD1ueGIoKT+mvBr55kesw4htgPz8kZ8wfSejvlM1FHnn4tLVFsn/SOGKhwJH4uA9dZIk6/MCyxcX/g04HJsAAAAASUVORK5CYII="
@@ -46,7 +46,7 @@
             </a>
             <a href="../Product/WMS.html" class="slideItem">
               <div class="sliderowCss">
-                <div>WMS</div>
+                <div>WMS(倉庫管理系統)</div>
                 <img
                   class="seemore"
                   src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAAAgElEQVRIie3VsQ3CQAxA0UdSIKBIFSmswxjMwQZhLEagomGH7BCJAgoKihRW7iT8S1v2l3U6myRJgmiD+uzQYF5a0ASJL7ijD+q3mD1ueGIoKT+mvBr55kesw4htgPz8kZ8wfSejvlM1FHnn4tLVFsn/SOGKhwJH4uA9dZIk6/MCyxcX/g04HJsAAAAASUVORK5CYII="
@@ -55,7 +55,7 @@
             </a>
             <a href="../Product/RFID.html" class="slideItem">
               <div class="sliderowCss">
-                <div>RFID</div>
+                <div>IoT(物聯網)</div>
                 <img
                   class="seemore"
                   src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAAAgElEQVRIie3VsQ3CQAxA0UdSIKBIFSmswxjMwQZhLEagomGH7BCJAgoKihRW7iT8S1v2l3U6myRJgmiD+uzQYF5a0ASJL7ijD+q3mD1ueGIoKT+mvBr55kesw4htgPz8kZ8wfSejvlM1FHnn4tLVFsn/SOGKhwJH4uA9dZIk6/MCyxcX/g04HJsAAAAASUVORK5CYII="
@@ -95,29 +95,33 @@
           </div>
         </div>
       </div>
+      <div class="backhomelogo">
+        <a href="../Home/index.html">
+          <img src="../Img/Home/home.png" />
+        </a>
+      </div>
+      <div class="totoplogo">
+        <a href="#top">
+          <img src="../Img/Home/up.png" />
+        </a>
+      </div>
     </label>
 
-    <div class="theContainer">
+    <div class="theContainer" id="top">
       <div class="productHaeder">
         <div class="productHaeder-font">
-          <div class="BigTitleW">何謂MES</div>
+          <div class="BigTitleW">MES(製造執行系統)</div>
           <p class="FontPBL">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis ex
-            optio commodi quod nihil corporis nostrum ea quidem vel voluptates?
-            Culpa quibusdam quasi sequi dolore a omnis delectus laborum
-            veritatis. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Debitis ex optio commodi quod nihil corporis nostrum ea quidem vel
-            voluptates? Culpa quibusdam quasi sequi dolore a omnis delectus
-            laborum veritatis.
+            在產品從工單發出到成品完工的過程中，MES起到傳遞信息以優化生產活動的作用。
+            在生產過程中，藉助實時精確的信息、MES引導、發起、響應，報告生產活動。作出快速的響應以應對變化,
+            減少無附加價值的生產活動，提高操作及流程的效率。
           </p>
         </div>
         <img class="PHeaderImg" src="../Img/Product/MES/mesheader.png" />
       </div>
       <div class="product-block">
         <div class="BigTitleB">導入效益</div>
-        <p class="FontPB">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis ex
-        </p>
+        <p class="FontPB">導入MES的效益可分為下列四大種</p>
         <div class="benefit-block">
           <div class="benefit-block-two">
             <div class="product-benefit-block">
@@ -126,10 +130,7 @@
                 class="product-mes-benefit"
               />
               <div class="product-benefit-title">產品追蹤</div>
-              <p class="FontPW">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Debitis ex
-              </p>
+              <p class="FontPW">可即時知道產品目前的資訊</p>
             </div>
             <div class="product-benefit-block">
               <img
@@ -138,10 +139,7 @@
               />
               <div class="product-benefit-title">人力管理</div>
 
-              <p class="FontPW">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Debitis ex
-              </p>
+              <p class="FontPW">可將人員做最有效的分配</p>
             </div>
           </div>
           <div class="benefit-block-two">
@@ -152,10 +150,7 @@
               />
               <div class="product-benefit-title">營運管理</div>
 
-              <p class="FontPW">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Debitis ex
-              </p>
+              <p class="FontPW">提供已規劃的訂單和方面的視角</p>
             </div>
             <div class="product-benefit-block">
               <img
@@ -164,28 +159,60 @@
               />
               <div class="product-benefit-title">物料管理</div>
 
-              <p class="FontPW">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Debitis ex
-              </p>
+              <p class="FontPW">提供流程路線規劃及營運排序</p>
             </div>
           </div>
         </div>
       </div>
       <div class="product-bigblock">
         <div class="product-block">
-          <div class="BigTitleB">應用範圍</div>
-          <div class="product-img-font">
-            <img
-              src="../Img/Product/MES/application.png"
-              class="Mesapplication"
-            />
-            <p class="FontPB">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
-              ex optio commodi quod nihil corporis nostrum ea quidem vel
-              voluptates? Culpa quibusdam quasi sequi dolore a omnis delectus
-              laborum veritatis. Lorem ipsum dolor sit amet consectetur,
-            </p>
+          <div class="BigTitleB">功能模組</div>
+          <div class="indexCards">
+            <div class="indexCards-2">
+              <div class="flip-card-none-flip">
+                <div class="flip-card-inner">
+                  <div class="flip-card-back-none-flip">
+                    <h1>基本模組</h1>
+                    <p class="FontPBL" style="width: 250px">
+                      使用者管理、基本資料維護、途程管理、工單履歷，序號管理、電子看板、報工收集、管理報表查詢
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="flip-card-none-flip">
+                <div class="flip-card-inner">
+                  <div class="flip-card-back-none-flip">
+                    <h1>選配模組</h1>
+                    <p class="FontPBL" style="width: 250px">
+                      ERP連線管理、排程管理、工單管理、品質管理、工時管理、物料管理、異常警示管理、分析管理、多維戰情分析、標籤打印管理
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="indexCards-2">
+              <div class="flip-card-none-flip">
+                <div class="flip-card-inner">
+                  <div class="flip-card-back-none-flip">
+                    <h1>離散產業模組</h1>
+                    <p class="FontPBL" style="width: 250px">
+                      製管卡管理、e-SOP管理、維修管理、委外工單管理、
+                      RMA返修管理
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="flip-card-none-flip">
+                <div class="flip-card-inner">
+                  <div class="flip-card-back-none-flip">
+                    <h1>連續產業模組</h1>
+                    <p class="FontPBL" style="width: 250px">
+                      模治工具管理、配方下載管理、能源監控管理、設備維護管理、機台監控管理、SPC監控管理
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="rightGears">
@@ -198,10 +225,8 @@
         <div class="product-block">
           <div class="product-img-font">
             <p class="FontPB">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
-              ex optio commodi quod nihil corporis nostrum ea quidem vel
-              voluptates? Culpa quibusdam quasi sequi dolore a omnis delectus
-              laborum veritatis. Lorem ipsum dolor sit amet consectetur,
+              MES
+              系統是每個智慧工廠都需要的，能幫助您提升營運管理，做最有效的人員管理，提供物料追蹤等服務
             </p>
             <img
               src="../Img/Product/MES/conclusion.png"
@@ -212,7 +237,7 @@
       </div>
     </div>
     <footer class="Footercontainer">
-      <div class="copyright">&copy; 2022 - HanrocProjects</div>
+      <div class="copyright">Copyright © 2022 版權為漢鼎科技所有。</div>
     </footer>
   </body>
 </html>

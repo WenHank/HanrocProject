@@ -21,24 +21,37 @@ label {
 
 /*Public*/
 .backhomelogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
     position: fixed;
     bottom: 50px;
     right: 50px;
     display: flex;
     background-color: orange;
     border-radius: 50%;
-    padding: 10px;
+    padding: 5px;
     cursor: pointer;
 }
 .totoplogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
     position: fixed;
     bottom: 150px;
     right: 50px;
     display: flex;
     background-color: orange;
     border-radius: 50%;
-    padding: 10px;
+    padding: 5px;
     cursor: pointer;
+}
+.ImgLogo{
+    width: 40px;
 }
 .slide {
     top: 0;
@@ -158,6 +171,7 @@ label {
 }
 
 .rightGears {
+    z-index: 0;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -374,10 +388,11 @@ label {
     margin: 20px;
     background-color: transparent;
     width: 300px;
-    height: 300px;
+    height: 500px;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 .flip-card-none-flip {
+    z-index: 1;
     margin: 20px;
     background-color: transparent;
     width: 300px;

@@ -20,7 +20,7 @@ label {
 }
 
 /*Public*/
-.backhomelogo{
+.backhomelogo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,8 +34,11 @@ label {
     border-radius: 50%;
     padding: 5px;
     cursor: pointer;
+    z-index: 5;
 }
-.totoplogo{
+
+.totoplogo {
+    z-index: 5;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,9 +53,11 @@ label {
     padding: 5px;
     cursor: pointer;
 }
-.ImgLogo{
+
+.ImgLogo {
     width: 40px;
 }
+
 .slide {
     top: 0;
     overflow: scroll;
@@ -291,10 +296,25 @@ label {
     color: #fff;
 }
 
+.BigTitleW-Little {
+    font-size: 25px;
+    color: #fff;
+}
+
 .BigTitleB {
     font-size: 65px;
 }
-.LittleTitleB{
+
+.Card-Title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.card-word-item {
+    margin: 0 0 15px 0;
+}
+
+.LittleTitleB {
     color: rgb(93, 108, 116);
     font-size: 50px;
 }
@@ -305,6 +325,7 @@ label {
     font-size: 20px;
     font-family: 'Roboto', 'Noto Sans TC', sans-serif;
 }
+
 .FontPBT {
     max-width: 500px;
     text-align: left;
@@ -323,16 +344,24 @@ label {
 
 
 .FontPBL {
-    text-align:center;
+    text-align: left;
     font-size: 20px;
     max-width: 500px;
     color: #d7dde5;
     font-family: 'Roboto', 'Noto Sans TC', sans-serif;
 }
+
 .FontPBLT {
     text-align: left;
     font-size: 20px;
     max-width: 500px;
+    color: #d7dde5;
+    font-family: 'Roboto', 'Noto Sans TC', sans-serif;
+}
+.indexheadP{
+    width: 300px;
+    text-align: left;
+    font-size: 15px;
     color: #d7dde5;
     font-family: 'Roboto', 'Noto Sans TC', sans-serif;
 }
@@ -378,6 +407,13 @@ label {
     flex-direction: row;
 }
 
+.indexCardsF {
+    margin: 50px 0 0 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .indexCards-2 {
     display: flex;
     align-items: center;
@@ -391,6 +427,7 @@ label {
     height: 500px;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
+
 .flip-card-none-flip {
     z-index: 1;
     margin: 20px;
@@ -399,6 +436,7 @@ label {
     height: 300px;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
+
 .flip-card-inner {
     position: relative;
     width: 100%;
@@ -446,7 +484,8 @@ label {
     transform: rotateY(180deg);
     transform-style: preserve-3d;
 }
-.flip-card-back-none-flip{
+
+.flip-card-back-none-flip {
     background-color: #1A5A76;
     display: flex;
     justify-content: center;
@@ -471,7 +510,7 @@ label {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 35px 0 35px;
+    padding: 0px 35px 0px 35px;
 }
 
 .indexContactblock {
@@ -536,6 +575,7 @@ label {
 }
 
 .homemap {
+    background: white;
     width: 350px;
     height: auto;
     border-radius: 20px;
@@ -702,7 +742,9 @@ label {
 .Wmsapplication, .wmsconclustion {
     width: 400px;
 }
-
+.wmsconclustion2{
+    width: 70%;
+}
 .product-bigblock {
     margin: 200px 0 0 0;
     width: 100%;
@@ -724,7 +766,7 @@ label {
 }
 
 .product-benefit-title {
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .benefit-block {
@@ -747,6 +789,9 @@ label {
     justify-content: center;
 }
 /*mes*/
+.mesfunction{
+    width: 70%;
+}
 .product-mes-benefit {
     height: 150px;
 }
@@ -769,7 +814,7 @@ label {
 
 .product-wms-block {
     padding: 100px;
-    margin: 200px 0 0 0;
+    margin: 150px 0 0 0;
     width: 100%;
     border-radius: 0 800px 0 0;
     align-items: center;
@@ -792,14 +837,14 @@ label {
 
 .wmsimgBx {
     position: absolute;
-    top: -50px;
+    top: -60px;
     height: 100px;
-    background-color: #fff;
+    color: white;
+    background-color: #1a5a76;
     border-radius: 20px;
     box-shadow: 0 15px 20px rgba(0,0,0,0.35);
     display: flex;
     padding: 10px;
-    color: #fff;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -826,6 +871,7 @@ label {
     flex-direction: row;
     align-items: center;
     padding: 10px;
+    margin: 0 0 50px 0;
 }
 
 .wmscardS-2 {
@@ -921,7 +967,6 @@ label {
     align-items: center;
     flex-direction: column;
     margin: 100px 0 20px 0;
-    
     width: 80%;
 }
 
@@ -972,12 +1017,13 @@ label {
     .BigTitleB {
         font-size: 40px;
     }
-    .LittleTitleB{
+
+    .LittleTitleB {
         font-size: 25px;
     }
 
     .BigTitleW {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .triangle {
@@ -1019,10 +1065,11 @@ label {
     /*product*/
     .productHaeder {
         flex-direction: column;
+        margin: 0 0 200px 0;
     }
 
     .productHaeder-font {
-        margin: 50px 0 0 0;
+        margin: 200px 0 0 0;
     }
 
     .product-img-font {
@@ -1081,7 +1128,7 @@ label {
     }
 
     .indexHaeder-font {
-        margin: 50px 0 0 0;
+        margin: 20px 0 0 0;
     }
 
     .indexContactblock {
@@ -1090,7 +1137,7 @@ label {
 
     .indexHaeder {
         flex-direction: column;
-        margin: 0 0 50px 0;
+        margin: 0 0 100px 0;
     }
 
     .index-about-block {
@@ -1099,7 +1146,7 @@ label {
 
     .indexHeaderImg {
         margin: 30px 0 30px 0;
-        width: 80%;
+        width: 40%;
     }
 
     .indexCards {
@@ -1288,12 +1335,13 @@ label {
     .BigTitleB {
         font-size: 60px;
     }
-    .LittleTitleB{
+
+    .LittleTitleB {
         font-size: 45px;
     }
 
     .BigTitleW {
-        font-size: 60px;
+        font-size: 50px;
     }
 
     .triangle {
